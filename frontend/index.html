@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flix Aura - Discover Movies, Series & Anime</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Flix Aura</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a href="profile.html">My List</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="search-toggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="user-menu">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title">Stranger Things</h2>
+                <p class="hero-description">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary"><i class="fas fa-play"></i> Play Now</button>
+                    <button class="btn btn-secondary"><i class="fas fa-plus"></i> Add to List</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Carousel -->
+    <section class="trending-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trending Now</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="trending-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <img src="https://image.tmdb.org/t/p/w500/8Ls1tZ6qjGzfD1mzaHLgNVtpAyO.jpg" alt="Movie">
+                        <div class="carousel-item-info">
+                            <h3>Movie Title</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>8.5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg" alt="Series">
+                        <div class="carousel-item-info">
+                            <h3>Series Title</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>9.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="Anime">
+                        <div class="carousel-item-info">
+                            <h3>Anime Title</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>8.2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://image.tmdb.org/t/p/w500/o0s4XsEDfDlvit5pDRKjzXR4pp2.jpg" alt="Movie">
+                        <div class="carousel-item-info">
+                            <h3>Another Title</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>7.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="Series">
+                        <div class="carousel-item-info">
+                            <h3>Popular Series</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>8.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Grid -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Movies</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="content-grid">
+                <!-- Movie items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Series Grid -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top Series</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="content-grid">
+                <!-- Series items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Anime Grid -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Anime</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="content-grid">
+                <!-- Anime items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Because You Watched</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="content-grid">
+                <!-- Recommended items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a href="index.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="search.html" class="nav-item">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <i class="fas fa-list"></i>
+            <span>My List</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

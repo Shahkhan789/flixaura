@@ -1,0 +1,281 @@
+/* Profile Page Specific Styles */
+
+.profile-main {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.profile-avatar {
+  font-size: 5rem;
+  color: var(--text-secondary);
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.username {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.member-since {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Profile Navigation */
+.profile-nav {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  box-shadow: var(--shadow);
+}
+
+.nav-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 15px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+}
+
+.nav-btn:hover {
+  color: var(--text-primary);
+}
+
+.nav-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Watched and To Watch Lists */
+.watch-date, .added-date {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* Reviews Tab */
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review {
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.review-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.review-header img {
+  width: 80px;
+  border-radius: var(--border-radius);
+}
+
+.review-info h3 {
+  margin-bottom: 10px;
+}
+
+.review-info .rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3px 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.review-info .rating .fa-star {
+  color: #f5c518;
+}
+
+.review-date {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.review-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Settings Tab */
+.settings-form {
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  padding: 12px 15px;
+  color: var(--text-primary);
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  width: auto;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.form-actions .btn {
+  flex: 1;
+  min-width: 120px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .stats {
+    justify-content: center;
+  }
+  
+  .profile-nav {
+    flex-wrap: wrap;
+  }
+  
+  .nav-btn {
+    flex: 0 0 calc(50% - 5px);
+  }
+  
+  .review-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .form-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-main {
+    padding-top: 70px;
+  }
+  
+  .profile-header {
+    padding: 20px;
+  }
+  
+  .stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .profile-avatar {
+    font-size: 4rem;
+  }
+  
+  .username {
+    font-size: 1.5rem;
+  }
+}

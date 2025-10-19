@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Flix Aura</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Flix Aura</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a href="profile.html">My List</a></li>
+                        <li><a href="profile.html" class="active">Profile</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="search-toggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="user-menu">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Content -->
+    <main class="profile-main">
+        <div class="container">
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="profile-info">
+                    <h1 class="username">JohnDoe</h1>
+                    <p class="member-since">Member since January 2023</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-value">42</span>
+                            <span class="stat-label">Watched</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">18</span>
+                            <span class="stat-label">To Watch</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">24</span>
+                            <span class="stat-label">Reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="btn btn-secondary"><i class="fas fa-edit"></i> Edit Profile</button>
+                </div>
+            </div>
+
+            <!-- Profile Navigation -->
+            <div class="profile-nav">
+                <button class="nav-btn active" data-tab="watched">Watched</button>
+                <button class="nav-btn" data-tab="towatch">To Watch</button>
+                <button class="nav-btn" data-tab="reviews">Reviews</button>
+                <button class="nav-btn" data-tab="settings">Settings</button>
+            </div>
+
+            <!-- Watched List Tab -->
+            <div class="tab-content active" id="watched-tab">
+                <div class="section-header">
+                    <h2>Recently Watched</h2>
+                </div>
+                <div class="content-grid">
+                    <div class="content-item">
+                        <img src="https://image.tmdb.org/t/p/w500/edfe20zUWE51aHPAQXW1uWFd2Rs.jpg" alt="Inception">
+                        <div class="content-item-info">
+                            <h3>Inception</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>8.4</span>
+                            </div>
+                            <div class="watch-date">Watched: 2 days ago</div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="The Dark Knight">
+                        <div class="content-item-info">
+                            <h3>The Dark Knight</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>9.0</span>
+                            </div>
+                            <div class="watch-date">Watched: 1 week ago</div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar">
+                        <div class="content-item-info">
+                            <h3>Interstellar</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>8.6</span>
+                            </div>
+                            <div class="watch-date">Watched: 2 weeks ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- To Watch List Tab -->
+            <div class="tab-content" id="towatch-tab">
+                <div class="section-header">
+                    <h2>To Watch List</h2>
+                </div>
+                <div class="content-grid">
+                    <div class="content-item">
+                        <img src="https://image.tmdb.org/t/p/w500/8Ls1tZ6qjGzfD1mzaHLgNVtpAyO.jpg" alt="Stranger Things">
+                        <div class="content-item-info">
+                            <h3>Stranger Things</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>8.7</span>
+                            </div>
+                            <div class="added-date">Added: 3 days ago</div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <img src="https://image.tmdb.org/t/p/w500/xUfRZu2mi8jH6SzQEJGP6tjBuYK.jpg" alt="Demon Slayer">
+                        <div class="content-item-info">
+                            <h3>Demon Slayer</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>8.7</span>
+                            </div>
+                            <div class="added-date">Added: 1 week ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews Tab -->
+            <div class="tab-content" id="reviews-tab">
+                <div class="section-header">
+                    <h2>Your Reviews</h2>
+                </div>
+                <div class="reviews-list">
+                    <div class="review">
+                        <div class="review-header">
+                            <img src="https://image.tmdb.org/t/p/w500/edfe20zUWE51aHPAQXW1uWFd2Rs.jpg" alt="Inception">
+                            <div class="review-info">
+                                <h3>Inception</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="review-date">Reviewed 2 days ago</div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Mind-blowing concept and execution! Nolan at his finest. The visuals are stunning and the story keeps you engaged throughout.
+                        </p>
+                    </div>
+                    <div class="review">
+                        <div class="review-header">
+                            <img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="The Dark Knight">
+                            <div class="review-info">
+                                <h3>The Dark Knight</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>10</span>
+                                </div>
+                                <div class="review-date">Reviewed 1 week ago</div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Heath Ledger's performance as the Joker is legendary. This is a masterpiece of cinema.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings Tab -->
+            <div class="tab-content" id="settings-tab">
+                <div class="section-header">
+                    <h2>Profile Settings</h2>
+                </div>
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" value="JohnDoe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" value="john.doe@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="language">Language</label>
+                        <select id="language">
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="dark-mode" checked>
+                            <span>Dark Mode</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="notifications">
+                            <span>Enable Notifications</span>
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-primary">Save Changes</button>
+                        <button class="btn btn-secondary">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="search.html" class="nav-item">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <i class="fas fa-list"></i>
+            <span>My List</span>
+        </a>
+        <a href="profile.html" class="nav-item active">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

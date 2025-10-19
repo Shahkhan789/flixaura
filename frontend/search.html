@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Flix Aura</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Flix Aura</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search.html" class="active">Search</a></li>
+                        <li><a href="profile.html">My List</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="search-toggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="user-menu">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Content -->
+    <main class="search-main">
+        <div class="container">
+            <div class="search-header">
+                <h1>Search</h1>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for movies, series, anime...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters-section">
+                <div class="filter-group">
+                    <label>Type</label>
+                    <div class="filter-options">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Movies</button>
+                        <button class="filter-btn">Series</button>
+                        <button class="filter-btn">Anime</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label>Genre</label>
+                    <select class="filter-select">
+                        <option>All Genres</option>
+                        <option>Action</option>
+                        <option>Comedy</option>
+                        <option>Drama</option>
+                        <option>Horror</option>
+                        <option>Sci-Fi</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Year</label>
+                    <select class="filter-select">
+                        <option>All Years</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2010s</option>
+                        <option>2000s</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Rating</label>
+                    <select class="filter-select">
+                        <option>All Ratings</option>
+                        <option>9+ Stars</option>
+                        <option>8+ Stars</option>
+                        <option>7+ Stars</option>
+                        <option>6+ Stars</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Sort By</label>
+                    <select class="filter-select">
+                        <option>Most Popular</option>
+                        <option>Newly Added</option>
+                        <option>Highest Rated</option>
+                        <option>Latest Comments</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Search Results -->
+            <section class="results-section">
+                <div class="section-header">
+                    <h2>Search Results</h2>
+                    <div class="results-info">
+                        <span>1-20 of 1,234 results</span>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <!-- Results will be populated by JavaScript -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="page-btn disabled"><i class="fas fa-chevron-left"></i></button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn">5</button>
+                    <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="search.html" class="nav-item active">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <i class="fas fa-list"></i>
+            <span>My List</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+
+    <script src="js/search.js"></script>
+</body>
+</html>

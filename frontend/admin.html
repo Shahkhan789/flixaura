@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Flix Aura</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Admin Header -->
+    <header class="admin-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Flix Aura Admin</h1>
+                </div>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="user-menu">
+                        <i class="fas fa-user"></i> Admin
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Content -->
+    <main class="admin-main">
+        <div class="container">
+            <!-- Admin Navigation -->
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="#" class="active" data-tab="dashboard"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="#" data-tab="users"><i class="fas fa-users"></i> Manage Users</a></li>
+                    <li><a href="#" data-tab="titles"><i class="fas fa-film"></i> Manage Titles</a></li>
+                    <li><a href="#" data-tab="links"><i class="fas fa-link"></i> Manage Links</a></li>
+                    <li><a href="#" data-tab="comments"><i class="fas fa-comments"></i> Manage Comments</a></li>
+                    <li><a href="#" data-tab="reports"><i class="fas fa-file-alt"></i> Reports</a></li>
+                </ul>
+            </nav>
+
+            <!-- Dashboard Tab -->
+            <div class="tab-content active" id="dashboard-tab">
+                <div class="section-header">
+                    <h2>Dashboard</h2>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>1,248</h3>
+                            <p>Total Users</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>42</h3>
+                            <p>New Users (Today)</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>5,832</h3>
+                            <p>Total Titles</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>12,406</h3>
+                            <p>Total Links</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Charts -->
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h3>Users Active (Last 7 Days)</h3>
+                        <div class="chart-placeholder">
+                            <p>Chart visualization would go here</p>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Content Views (Last 7 Days)</h3>
+                        <div class="chart-placeholder">
+                            <p>Chart visualization would go here</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Activity -->
+                <div class="recent-activity">
+                    <div class="section-header">
+                        <h3>Recent Activity</h3>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>User123</strong> registered</p>
+                                <span class="activity-time">2 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>MovieFan</strong> commented on "Inception"</p>
+                                <span class="activity-time">15 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Admin</strong> updated link for "The Matrix"</p>
+                                <span class="activity-time">1 hour ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Users Tab -->
+            <div class="tab-content" id="users-tab">
+                <div class="section-header">
+                    <h2>Manage Users</h2>
+                    <div class="actions">
+                        <button class="btn btn-secondary"><i class="fas fa-download"></i> Export CSV</button>
+                    </div>
+                </div>
+                
+                <!-- Users Table -->
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>JohnDoe</td>
+                                <td>john@example.com</td>
+                                <td>User</td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                    <button class="action-btn"><i class="fas fa-ban"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>JaneSmith</td>
+                                <td>jane@example.com</td>
+                                <td>User</td>
+                                <td><span class="status banned">Banned</span></td>
+                                <td>
+                                    <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                    <button class="action-btn"><i class="fas fa-check"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>AdminUser</td>
+                                <td>admin@example.com</td>
+                                <td>Admin</td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Titles Tab -->
+            <div class="tab-content" id="titles-tab">
+                <div class="section-header">
+                    <h2>Manage Titles</h2>
+                    <div class="actions">
+                        <button class="btn btn-primary"><i class="fas fa-plus"></i> Add Title</button>
+                    </div>
+                </div>
+                
+                <!-- Titles Table -->
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Type</th>
+                                <th>Year</th>
+                                <th>Rating</th>
+                                <th>Links</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Inception</td>
+                                <td>Movie</td>
+                                <td>2010</td>
+                                <td>8.4</td>
+                                <td>5</td>
+                                <td>
+                                    <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                    <button class="action-btn"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Stranger Things</td>
+                                <td>Series</td>
+                                <td>2016</td>
+                                <td>8.7</td>
+                                <td>8</td>
+                                <td>
+                                    <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                    <button class="action-btn"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Other tabs would be implemented similarly -->
+        </div>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
